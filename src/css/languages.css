@@ -1,0 +1,41 @@
+.langs-container{
+    padding: 2rem 2rem;
+    margin-top: -34.4rem;
+    margin-left: 14.4rem;
+    color: white;
+}
+
+.languages-1{
+    margin-top: 1.5rem;
+}
+
+.languages-1 .card{
+    margin-bottom: 1rem;
+    background: rgba(40, 40, 255, 0.913);
+    padding: 16px 16px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.languages-1 .card:hover{
+    transform: translateY(-4px);
+    background: rgba(91, 91, 255, 0.913);
+}
+
+.languages-1 .card .name{
+    display: flex;
+    align-items: center;
+    font-size: 1.55rem;
+}
+
+.languages-1 .card .icon{
+    margin-right: 0.5rem;
+}
+
+/* Media Layout */
+@media (max-width: 768px){
+    .langs-container{
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+}

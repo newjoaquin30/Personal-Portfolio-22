@@ -1,0 +1,40 @@
+#text-thing{
+    border-top-right-radius: 13vw;
+    border-bottom-right-radius: 13vw;
+    border-top-left-radius: 0vw;
+    border-bottom-left-radius: 0vw;
+}
+
+#text-thing .exist{
+    margin-top: 0.8rem;
+}
+
+#text-thing .exist a:hover{
+    text-decoration: underline;
+}
+
+#text-thing .exist a{
+    font-weight: bold;
+}
+
+#form-page{
+    overflow-y: scroll;
+    scrollbar-color: rgb(40, 40, 200) rgb(40, 40, 200);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#form-1{
+    height: 79.1%;
+}
+
+/* Media Layout */
+@media (max-width: 440px){
+    #text-thing{
+        display: none;
+    }
+
+    #form-page{
+        width: 200%;
+    }
+}

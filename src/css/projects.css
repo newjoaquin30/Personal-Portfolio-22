@@ -1,0 +1,94 @@
+.projects-container{
+    padding: 2rem 2rem;
+    margin-top: -34.5rem;
+    margin-left: 14.4rem;
+    color: white;
+}
+
+.projects-contents .frontend-projs{
+    margin-top: 1.5rem;
+}
+
+.projects-contents .frontend a{
+    color: white;
+}
+
+.lightmode .projects-contents .frontend .sees{
+    color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.65rem;
+}
+
+.backend-section{
+    margin-top: 10rem;
+}
+
+.backend{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 1.5rem;
+}
+
+.backend .card{
+    background: rgba(40, 40, 255, 0.913);
+    padding: 17px 17px;
+    border-radius: 10px;
+    height: max-content;
+}
+
+.backend .card img{
+    max-width: 40px;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 50vw;
+}
+
+.backend .card .umak{
+    display: flex;
+    align-items: center;
+}
+
+.backend .card .genre{
+    margin-bottom: 1rem;
+}
+
+.backend .card .title{
+    margin-bottom: 0.35rem;
+}
+
+.frontend .sees{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+/* Media Layout */
+@media (max-width: 768px){
+    .projects-container{
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    .frontend{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .backend{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 440px){
+    .frontend{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

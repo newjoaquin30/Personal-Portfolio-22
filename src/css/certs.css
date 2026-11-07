@@ -1,0 +1,50 @@
+.certificates-container-2{
+    padding: 2rem 2rem;
+    margin-top: -34.5rem;
+    margin-left: 14.4rem;
+    color: white;
+}
+
+.certificates{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.certificates .card img{
+    max-width: 300px;
+    margin-top: 1rem;
+}
+
+.certificates .card{
+    background: rgba(40, 40, 255, 0.913);
+    padding: 17px 17px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.certificates .card:hover{
+    transform: translateY(-5px);
+    background: rgba(91, 91, 255, 0.913);
+}
+
+/* Media Layout */
+@media (max-width: 768px){
+    .certificates-container-2{
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    .certificates{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 440px){
+    .certificates{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

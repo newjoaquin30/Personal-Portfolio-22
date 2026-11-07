@@ -1,0 +1,271 @@
+.settings-container{
+    padding: 2rem 2rem;
+    margin-top: -34.5rem;
+    margin-left: 14.4rem;
+    color: white;
+}
+
+.gen-settings{
+    margin-top: 1.5rem;
+}
+
+.gen-settings .settings{
+    background: rgba(40, 40, 255, 0.913);
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+/* From Uiverse.io by namecho */ 
+.switch {
+ --button-width: 3.5em;
+ --button-height: 2em;
+ --toggle-diameter: 1.5em;
+ --button-toggle-offset: calc((var(--button-height) - var(--toggle-diameter)) / 2);
+ --toggle-shadow-offset: 10px;
+ --toggle-wider: 3em;
+ --color-grey: #cccccc;
+ --color-green: #4296f4;
+ margin-left: 50rem;
+ cursor: pointer;
+ margin-top: 0.45rem;
+}
+
+.slider {
+ display: inline-block;
+ width: var(--button-width);
+ height: var(--button-height);
+ background-color: var(--color-grey);
+ border-radius: calc(var(--button-height) / 2);
+ position: relative;
+ transition: 0.3s all ease-in-out;
+}
+
+.slider::after {
+ content: "";
+ display: inline-block;
+ width: var(--toggle-diameter);
+ height: var(--toggle-diameter);
+ background-color: #fff;
+ border-radius: calc(var(--toggle-diameter) / 2);
+ position: absolute;
+ top: var(--button-toggle-offset);
+ transform: translateX(var(--button-toggle-offset));
+ box-shadow: var(--toggle-shadow-offset) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+ transition: 0.3s all ease-in-out;
+}
+
+.switch input[type="checkbox"]:checked + .slider {
+ background-color: var(--color-green);
+}
+
+.switch input[type="checkbox"]:checked + .slider::after {
+ transform: translateX(calc(var(--button-width) - var(--toggle-diameter) - var(--button-toggle-offset)));
+ box-shadow: calc(var(--toggle-shadow-offset) * -1) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+}
+
+.switch input[type="checkbox"] {
+ display: none;
+}
+
+.switch input[type="checkbox"]:active + .slider::after {
+ width: var(--toggle-wider);
+}
+
+.switch input[type="checkbox"]:checked:active + .slider::after {
+ transform: translateX(calc(var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)));
+}
+
+.lightmode{
+    background: #efefef;
+    transition: 0.5s ease;
+    color: black;
+}
+
+.lightmode .settings-container{
+    color: black;
+}
+
+.lightmode .gen-settings .settings{
+    color: white;
+}
+
+.lightmode .navigation-bar{
+    background: rgba(250, 250, 250, 0.799);
+}
+
+.lightmode .navigation-bar .nav-logo .logo{
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.lightmode .navigation-bar .nav-logo .logo .icon{
+    background: rgb(98, 98, 255);
+    padding: 6px 6px;
+    margin-right: 0.5rem;
+    border-radius: 50vw;
+    border: 1px solid #ccc;
+}
+
+.lightmode .navigation-bar .input-search input{
+    padding: 10px 10px;
+    font-family: var(--primary-font);
+    border-radius: 50vw;
+    width: 180%;
+}
+
+.lightmode .navigation-bar .input-search{
+    margin-left: -5rem;
+}
+
+.lightmode .input-search input{
+    background: #ccc;
+}
+
+.profile img{
+    max-width: 35px;
+    margin-right: 0.7rem;
+    border-radius: 50vw;
+}
+
+.lightmode .profile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: black;
+}
+
+.lightmode .profile .icon{
+    font-size: 1.55rem;
+    cursor: pointer;
+}
+
+.lightmode .profile .pfp{
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.lightmode .sidenav-bar{
+    background: rgba(241, 241, 241, 0.794);
+}
+
+.lightmode .sidenav-bar .line{
+    border: 1px solid #cccccc6f;
+    margin-bottom: 0.7rem;
+    margin-top: 0.7rem;
+}
+
+.lightmode .sidenav-bar .logo{
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.lightmode .sidenav-bar .logo .icon{
+    margin-right: 0.5rem;
+    background: rgb(98, 98, 255);
+    padding: 6px 6px;
+    border-radius: 50vw;
+}
+
+.lightmode .sidenav-bar .menu{
+    color: black;
+    text-transform: uppercase;
+}
+
+.lightmode .sidenav-bar .nav-icon{
+    margin-right: 0.5rem;
+}
+
+.lightmode .sidenav-bar a{
+    display: flex;
+    align-items: center;
+    padding: 9px 9px;
+    transition: all 0.3s ease;
+    color: black;
+}
+
+.lightmode .sidenav-bar a:hover{
+    background: rgb(98, 98, 255);
+    color: white;
+}
+
+.lightmode .sidenav-bar .configs{
+    color: black;
+    text-transform: uppercase;
+}
+
+.lightmode .logout a{
+    display: flex;
+    align-items: center;
+}
+
+.lightmode .projects-container{
+    color: black;
+}
+
+.lightmode .projects-contents .frontend .card{
+    color: white;
+}
+
+.lightmode .backend .card{
+    color: white;
+}
+
+.lightmode .langs-container{
+    color: black;
+}
+
+.lightmode .languages-1 .card{
+    color: white;
+}
+
+.lightmode .certificates-container-2{
+    color: black;
+}
+
+.lightmode .certificates .card{
+    color: white;
+}
+
+.lightmode .dashboard-title{
+    color: black;
+}
+
+.lightmode .dashboard-contents .text{
+    color: black;
+}
+
+.lightmode .frontend-section{
+    color: black;
+}
+
+.lightmode .frontend .card{
+    color: white;
+}
+
+.lightmode .navigation-bar .menu-1{
+    color: black;
+}
+
+/* Media Layout */
+@media (max-width: 768px){
+    .settings-container{
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    .switch{
+        margin-left: 25.5rem;
+    }
+}
+
+@media (max-width: 440px){
+    .switch{
+        margin-left: 5.8rem;
+    }
+}

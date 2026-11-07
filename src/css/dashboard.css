@@ -1,0 +1,302 @@
+.navigation-bar{
+    background: rgba(40, 40, 255, 0.913);
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    border-radius: 1px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navigation-bar .nav-logo .logo{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.navigation-bar .nav-logo .logo .icon{
+    background: rgb(98, 98, 255);
+    padding: 6px 6px;
+    margin-right: 0.5rem;
+    border-radius: 50vw;
+    border: 1px solid #ccc;
+}
+
+.navigation-bar .input-search input{
+    padding: 10px 10px;
+    font-family: var(--primary-font);
+    border-radius: 50vw;
+    width: 180%;
+}
+
+.navigation-bar .input-search{
+    margin-left: -5rem;
+}
+
+.profile img{
+    max-width: 35px;
+    margin-right: 0.7rem;
+    border-radius: 50vw;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+.profile .icon{
+    font-size: 1.55rem;
+    cursor: pointer;
+}
+
+.profile .pfp{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.sidenav-bar{
+    background: rgba(40, 40, 255, 0.913);
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    padding: 19px 15.5px;
+    width: 17.5%;
+    margin-top: 0.2rem;
+    position: sticky;
+    top: 85px;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.sidenav-bar .line{
+    border: 1px solid #cccccc6f;
+    margin-bottom: 0.7rem;
+    margin-top: 0.7rem;
+}
+
+.sidenav-bar .logo{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.sidenav-bar .logo .icon{
+    margin-right: 0.5rem;
+    background: rgb(98, 98, 255);
+    padding: 6px 6px;
+    border-radius: 50vw;
+}
+
+.sidenav-bar .menu{
+    color: white;
+    text-transform: uppercase;
+}
+
+.sidenav-bar .nav-icon{
+    margin-right: 0.5rem;
+}
+
+.sidenav-bar a{
+    display: flex;
+    align-items: center;
+    padding: 9px 9px;
+    transition: all 0.3s ease;
+}
+
+.sidenav-bar a:hover{
+    background: rgb(98, 98, 255);
+}
+
+.sidenav-bar .configs{
+    color: white;
+    text-transform: uppercase;
+}
+
+.logout a{
+    display: flex;
+    align-items: center;
+}
+
+.logout{
+    margin-top: 7.5rem;
+}
+
+.logout a .icon{
+    margin-right: 0.4rem;
+}
+
+.current{
+    background: rgb(137, 137, 255);
+    border-left: 5px solid rgb(0, 0, 124);
+}
+
+.current:hover{
+    border: none;
+}
+
+.dashboard-container{
+    padding: 2rem 2rem;
+    margin-top: -34.5rem;
+    margin-left: 14.4rem;
+}
+
+.dashboard-contents .dashboard-title{
+    color: white;
+}
+
+.dashboard-contents .text{
+    color: #ccc;
+    margin-top: 0.2rem;
+}
+
+.dashboard-contents .stuff-cards{
+    margin-top: 2rem;
+    font-size: 1.35rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.stuff-cards .card{
+    background: rgba(40, 40, 255, 0.913);
+    padding: 17px 17px;
+    border-radius: 10px;
+}
+
+.stuff-cards .card .title{
+    color: #ccc;
+    margin-bottom: 0.4rem;
+}
+
+.stuff-cards .card .no{
+    color: white;
+}
+
+.frontend-section{
+    margin-top: 10rem;
+    color: white;
+}
+
+.frontend{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 1rem;
+}
+
+.frontend .card{
+    background: rgba(40, 40, 255, 0.913);
+    padding: 17px 17px;
+    border-radius: 10px;
+    height: max-content;
+}
+
+.frontend .card .headset{
+    margin-right: 0.5rem;
+}
+
+.frontend .card .title{
+    margin-top: 0.2rem;
+    margin-bottom: 0.35rem;
+}
+
+.frontend .card .genre{
+    margin-bottom: 1rem;
+}
+
+.navigation-bar #search-1{
+    display: none;
+}
+
+.navigation-bar .menu-1{
+    display: none;
+}
+
+.sidenav-bar .logo .close{
+    display: none;
+}
+
+/* Media Layout */
+@media (max-width: 768px){
+    .navigation-bar .name{
+        display: none;
+    }
+
+    .navigation-bar .input-search{
+        display: none;
+    }
+
+    .navigation-bar #search-1{
+        display: block;
+    }
+
+    .navigation-bar .menu-1{
+        display: block;
+        font-size: 1.85rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    .navigation-bar .nav-logo{
+        display: flex;
+        align-items: center;
+    }
+
+    #sidenav{
+        position: fixed;
+        width: 50%;
+        left: -380px;
+    }
+    
+    .sidenav-bar .logo .close{
+        display: block;
+        margin-left: 9rem;
+        cursor: pointer;
+    }
+
+    .dashboard-container{
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    .dashboard-contents .stuff-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .frontend-section .frontend{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 440px){
+    #sidenav{
+        width: max-content;
+    }
+
+    .profile .name{
+        display: none;
+    }
+
+    .dashboard-contents .stuff-cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .frontend-section .frontend{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

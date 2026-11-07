@@ -1,0 +1,195 @@
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form{
+    background: rgb(40, 40, 200);
+    border-radius: 10px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.form-page{
+    padding: 30px 30px;
+}
+
+.form-page .logo-icon{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.form-page .logo-icon .icon{
+    margin-right: 0.5rem;
+    background: rgb(26, 26, 155);
+    padding: 5px 5px;
+    border-radius: 50vw;
+}
+
+.form-page .welcome{
+    color: white;
+    margin-top: 0.4rem;
+    margin-bottom: 0.3rem;
+}
+
+.form-page .text{
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.form-page #email{
+    width: 100%;
+    padding: 15px 15px;
+    font-family: var(--primary-font);
+    margin-bottom: 1.3rem;
+    margin-top: 0.4rem;
+    border-radius: 10px;
+}
+
+.form-page #password{
+    width: 100%;
+    padding: 15px 15px;
+    font-family: var(--primary-font);
+    margin-bottom: 1.3rem;
+    margin-top: 0.4rem;
+    border-radius: 10px;
+}
+
+.form-page label{
+    color: white;
+}
+
+.form-page input:focus-visible{
+    border: 2px solid rgb(202, 24, 202);
+    box-shadow: 0 0px 20px rgb(202, 24, 202);
+}
+
+.form-page .forgots{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-page .rem #checkbox{
+    margin-right: 0.4rem;
+}
+
+.form-page .rem{
+    color: white;
+}
+
+.form-page .signin{
+    padding: 1rem 2rem;
+    font-family: var(--primary-font);
+    margin-top: 1rem;
+    border-radius: 50vw;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-page .signin:hover{
+    background: rgb(26, 26, 155);
+    color: white;
+}
+
+.form-page .dont{
+    margin-top: 1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-page .dont a{
+    color: #ccc;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.form-page .dont a:hover{
+    text-decoration: underline;
+}
+
+.text-thing{
+    background: rgb(26, 26, 155);
+    padding: 20px 70px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    border-top-left-radius: 13vw;
+    border-bottom-left-radius: 13vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-thing .text-1{
+    margin-top: -1rem;
+}
+
+.text-thing .logo-name{
+    font-size: 2rem;
+    margin-bottom: 0.9rem;
+    margin-top: 0.6rem;
+    display: flex;
+    align-items: center;
+}
+
+.text-thing .logo-name .icon{
+    background: rgb(40, 40, 255);
+    padding: 9px 9px;
+    margin-right: 0.4rem;
+    border-radius: 50vw;
+}
+
+/* Media Layout */
+@media (max-width: 768px){
+    .form{
+        width: max-content;
+    }
+
+    .text-thing .text-1 .logo-name{
+        width: 128%;
+    }
+
+    .text-thing .text-1 .text{
+        width: 128.2%;
+    }
+}
+
+@media (max-width: 440px){
+    .text-thing{
+        display: none;
+    }
+
+    .form .form-page{
+        width: max-content;
+    }
+
+    .form .form-page #email{
+        width: 130%;
+    }
+    
+    .form .form-page #password{
+        width: 130%;
+    }
+
+    .form .signin{
+        width: 130%;
+    }
+
+    .form .form-page .forgots .acc{
+        position: relative;
+        left: 29%;
+    }
+
+    .form .form-page .dont{
+        position: relative;
+        left: 15%;
+    }
+}
